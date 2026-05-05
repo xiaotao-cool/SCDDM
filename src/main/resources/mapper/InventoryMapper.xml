@@ -1,0 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 徐鑫涛
+  Date: 2025/12/25
+  Time: 16:39
+  To change this template use File | Settings | File Templates.
+--%>
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.scddm.mapper.InventoryMapper">
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scddm.mapper.DeviceStatusLogMapper">
+
+    <insert id="insert">
+        insert into device_status_log
+            (deviceId, oldStatus, newStatus, operator, changeTime)
+        values
+            (#{deviceId}, #{oldStatus}, #{newStatus}, #{operator}, #{changeTime})
+    </insert>
+
+    <select id="findByDeviceId" resultType="com.scddm.entity.DeviceStatusLog">
+        select * from device_status_log
+        where deviceId = #{deviceId}
+        order by changeTime desc
+    </select>
+
+</mapper>
